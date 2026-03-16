@@ -18,8 +18,9 @@ function Main() {
                 </div>
             </div>
                 <div className="image-container">
-                    <img src="/src/assets/images/square1.jpg" />
+                    <img src="/src/assets/images/square1.jpg" alt="hot air balloon" />
                 </div>
+                
         </main>
     )
 }
