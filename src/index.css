@@ -32,15 +32,18 @@
 
 body {
   margin: 0;
+  font-family: Inter;
 }
 
 header {
   height: 100px;
-  background-color: gray;
+  border-bottom: 1px solid black;
+  margin: 10px;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Datatype", sans-serif;
 }
 
 header > h1 {
@@ -48,6 +51,54 @@ header > h1 {
   color:black;
 }
 
+.location-container {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  column-gap: 10px;
+  padding: 10px;
+}
+
 .location-info {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.location-info > h1 {
+  font-family: "Cinzel";
+  color: #2c2c2c;
+}
+
+.location-specs {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.mini-text {
+  font-size: xx-small;
+}
+
+.location-description {
+  max-width: 400px;
+}
+
+.image-container {
+  height: 250px;
+  width: 160px;
+  overflow: hidden;
+  border-radius: 5px;
+  
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-size {
+  font-size: small;
 }
