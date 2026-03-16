@@ -5,7 +5,27 @@ function App() {
   return (
     <>
       <Header />
-      <Main />
+      <Main   header="Villa Miwani"
+              location="Kisumu, KE"
+              locationLink="https://maps.app.goo.gl/tLXx46nAgSPut29cA"
+              meters="[1160 m<sup className='mini-text'>2</sup>]"
+              availableRooms="[2 bedrooms]"
+              yearVisit="[2025]"
+              comments="Experienced really heavy rainfalls. The lights were out for the most 
+                        part but there was no issue with the drainage system in the area"
+              src="/src/assets/images/square1.jpg"
+              alt="hot air balloon"
+              />
+      <Main   header="Tunataka Pawa"
+              location="Nairobi, KE"
+              locationLink="https://maps.app.goo.gl/tLXx46nAgSPut29cA"
+              meters="[1160 m<sup className='mini-text'>2</sup>]"
+              availableRooms="[4 bedrooms]"
+              yearVisit="[2024]"
+              comments="Such a great experience 10/10"
+              src="/src/assets/images/square1.jpg"
+              alt="hot air balloon"
+              />
     </>
   )
 }
