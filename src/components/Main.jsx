@@ -9,8 +9,8 @@ function Main(props) {
                     <span className="info-size"><a href={props.locationLink}>View on google maps</a></span>
                 </div>
                 <div className="location-specs">
-                    <p>{props.meters}</p>
-                    <p>{props.availableRooms}</p>
+                    <p>{props.meters}<sup className='mini-text'>2</sup>]</p>
+                    <p>{props.availableRooms} bedrooms]</p>
                     <p>{props.yearVisit}</p>
                 </div>
                 <div className="location-description">
