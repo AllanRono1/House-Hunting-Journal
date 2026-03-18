@@ -1,6 +1,5 @@
 function Main(props) {
     return (
-        <main>
             <section className="location-container">
             <div>
                 <div className="location-info">
@@ -21,7 +20,6 @@ function Main(props) {
                     <img src={props.src} alt={props.alt} />
                 </div>
             </section>    
-        </main>
     )
 }
 

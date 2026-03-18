@@ -1,31 +1,27 @@
 import Header from "./components/Header"
 import Main from "./components/Main"
+import data from "./data/data"
+import square1 from "./assets/images/square1.jpg"
 
 function App() {
+  const mappedData = data.map((house) => {
+    return <Main 
+                 header={house.header}
+                 location={house.location}
+                 locationLink={house.locationLink}
+                 meters={house.meters}
+                 availableRooms={house.availableRooms}
+                 yearVisit={house.yearVisit}
+                 comments={house.comments}
+                 img={square1}
+                 />
+  })
   return (
     <>
       <Header />
-      <Main   header="Villa Miwani"
-              location="Kisumu, KE"
-              locationLink="https://maps.app.goo.gl/tLXx46nAgSPut29cA"
-              meters="[1160 m"
-              availableRooms="[2"
-              yearVisit="[2025]"
-              comments="Experienced really heavy rainfalls. The lights were out for the most 
-                        part but there was no issue with the drainage system in the area"
-              src="/src/assets/images/square1.jpg"
-              alt="hot air balloon"
-              />
-      <Main   header="Tunataka Pawa"
-              location="Nairobi, KE"
-              locationLink="https://maps.app.goo.gl/tLXx46nAgSPut29cA"
-              meters="[1160 m"
-              availableRooms="[4"
-              yearVisit="[2024]"
-              comments="Such a great experience 10/10"
-              src="/src/assets/images/square1.jpg"
-              alt="hot air balloon"
-              />
+      <main>
+        {mappedData}
+      </main>
     </>
   )
 }
